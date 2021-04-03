@@ -2,15 +2,15 @@
 
 import React from 'react';
 import {BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/container';
+import Navbar from 'react-bootstrap/navbar';
+import Nav from 'react-bootstrap/nav';
 import './App.scss';
 
-import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
+import Footer from './components/footer';
+import HomePage from './pageContent/home';
+import AboutPage from './pageContent/about';
+import ContactPage from './pageContent/contactMe';
 
 
 class App extends React.Component {
