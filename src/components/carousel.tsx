@@ -2,16 +2,18 @@ import React from 'react';
 
 import Card from '../components/card';
 
-import Nasa from '';
-import who from '';
-import Joia from '';
-import ReadMe from '';
-import My1st from '';
-import orderForm from '';
-import noteTaker from '';
-import cr from '';
-import CV from '';
-import pw from '';
+import Nasa from '../assets/media/projectImages/Nasa.png';
+import who from '../assets/media/projectImages/team.png';
+import Joia from '../assets/media/images/Joia.png';
+import ReadMe from '../assets/media/projectImages/rmg.png';
+import My1st from '../assets/media/projectImages/scn.png';
+import orderForm from '../assets/media/projectImages/of.png';
+import noteTaker from '../assets/media/projectImages/nt.png';
+import cr from '../assets/media/projectImages/cr.png';
+import CV from '../assets/media/projectImages/CV.png';
+import pw from '../assets/media/projectImages/pg.png';
+import MCT from '../assets/media/projectImages/mct.png';
+import start from '../assets/media/projectImages/strt.png';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -51,7 +53,7 @@ class Carousel extends React.Component {
                     title: 'Read Me Generator',
                     subTitle: 'Professional README Generator.',
                     imgSrc: ReadMe,
-                    link: 'https://github.com/supercodingninja/ReadMeGenerator',
+                    link: 'https://www.youtube.com/watch?v=Pp9IG-prQjE',
                     selected: false
                 },
                 {
@@ -100,6 +102,22 @@ class Carousel extends React.Component {
                     subTitle: 'This application randomly generates a password for the user to use.',
                     imgSrc: pw,
                     link: 'https://github.com/supercodingninja/passwordGenerator',
+                    selected: false
+                },
+                {
+                    id: 10,
+                    title: 'MY FAVORITE PROJECT',
+                    subTitle: 'I used the Adobe Creative Cloud Suite To Create A Beautiful Birthday Message To My Daughter.',
+                    imgSrc: MCT,
+                    link: 'https://www.youtube.com/watch?v=CK_Z686G6No',
+                    selected: false
+                },
+                {
+                    id: 11,
+                    title: 'Need Motivation?',
+                    subTitle: `Today, is the time to start!  When you start today, you're a lot further than you were, yesterday.`,
+                    imgSrc: start,
+                    link: 'https://www.youtube.com/watch?v=gP-fl4-H7hY',
                     selected: false
                 },
             ]
