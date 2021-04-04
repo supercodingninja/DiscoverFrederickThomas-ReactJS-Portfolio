@@ -23,7 +23,7 @@ app.post('/api/email', (req, res, next) => {
 
     console.log(req.body);
 
-    sendGrid.setApiKey('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');
+    sendGrid.setApiKey(process.env.SENDGRID_API_KEY);
 
     const msg = {
         to: 'supercodingninja@outlook.com',

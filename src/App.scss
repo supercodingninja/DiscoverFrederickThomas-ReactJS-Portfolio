@@ -1,1 +1,43 @@
-// Ref. https://www.youtube.com/watch?v=41-jn5tdg50&list=PLnpdZyv-BjINbUjmTUsyziHz_4fa9hM5G //
+// Ref. w3schools.com + Ref. https://www.youtube.com/watch?v=41-jn5tdg50&list=PLnpdZyv-BjINbUjmTUsyziHz_4fa9hM5G //
+
+.App {
+    text-align: center;
+};
+
+.App-logo {
+    // animation: App-logo-spin infinite 20s linear; //  // I did not add, yet: I need to see if my SCN logo, and how it appears. //
+    height: 40vmin;
+    pointer-events: none;
+};
+
+.App-header {
+    @include padding(2px 4px 6px);
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+};
+
+.App-link {
+    color: #61dafb;
+};
+
+
+// I did not add, yet: I need to see if my SCN logo, and how it appears. //
+// @keyframes App-logo-spin {
+//     from {
+    
+//         transform: rotate(0deg);
+    
+//     }
+    
+//     to {
+        
+//         transform: rotate(360deg);
+    
+//     }
+// }
