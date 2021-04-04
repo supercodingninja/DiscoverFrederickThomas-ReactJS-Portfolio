@@ -1,12 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-
 const sendGrid = require('@sendGrid/mail');
-
-
 const app = express();
-
 
 app.use(bodyParser.json());
 
@@ -19,17 +15,16 @@ app.use((req, res, next) => {
     next();
 });
 
-
 app.get('/api', (req, res, next) => {
     res.send('API Status: I\'m awesome')
 });
-
 
 app.post('/api/email', (req, res, next) => {
 
     console.log(req.body);
 
     sendGrid.setApiKey('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');
+
     const msg = {
         to: 'supercodingninja@outlook.com',
         from: req.body.email,
@@ -54,6 +49,5 @@ app.post('/api/email', (req, res, next) => {
 
         });
 });
-
 
 app.listen(3030, '0.0.0.0');
